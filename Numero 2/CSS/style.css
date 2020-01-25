@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header {
+    background: rgba(255,255,255,255.9);
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+nav {
+    width: 100%;
+    float: left;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden; /* Limpiamos errores de float */
+}
+
+nav ul li {
+    float: left;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 18px;
+}
+
+nav ul li a {
+    display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    padding: 20px;
+    color:#5374a9;
+    text-decoration: none;
+}
+.acceso{
+    width: 250px;
+    background-color:#5374a9;
+    color:#fafafa !important;
+    float:right;
+}
+.acceso a{
+    background-color:#5374a9;
+    color:#fafafa !important;
+    float:right;
+}
+
+nav ul li:hover {
+    background: #3ead47;
+}
+.acceso:hover a{
+    background-color: red;
+}
+.wrapper {
+    width: 100%;
+    overflow:hidden;
+}
+
+
+
+
+
+#seccion1{
+    background: url(../Imagenes/1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:700px;
+}
+#seccion2{
+    background:url(../Imagenes/Fondo4.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 800px;
+}
+#seccion3{
+    background: url(../Imagenes/Fondo2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1000px;
+}
+.container1{
+    height: 100%;
+}
+.titulo{
+    background-color: grey;
+    width: 100%;
+    height: 50px;
+    margin-top: -15px;
+}
+
+h3 {
+    color: white;/* #111;*/
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 15px "Lato", sans-serif;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+
+
+#Desc{
+    background-color: transparent;
+    font-family: 'Catamaran', sans-serif;
+    position: absolute;
+    margin-top: 14%;
+    margin-left:20%;
+    margin-right:18%;
+    text-align: center;
+
+    color:#000;
+}
+
+.ddprincipal{
+    font-weight:bold;
+    font-size:50px;
+    line-height: 1;
+}
+
+.etiq{
+    font-size:70px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+
+
+
+
+/*PARRAFOS y SPAN*/
+.name{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.name2{
+    position: absolute;
+    margin-top: 25%;
+    width: 100%;
+    color: #111;
+    text-align: center;
+    font-size: 50px;
+}
+
+.name3{
+    position: absolute;
+    margin-top: 25%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 700px) { 
+    #Desc{
+        background-color: red;
+        font-family: 'Catamaran', sans-serif;
+        position: absolute;
+        margin-top: 14%;
+        margin-left:20%;
+        margin-right:18%;
+        text-align: center;
+        color:#000;
+    }
+}
