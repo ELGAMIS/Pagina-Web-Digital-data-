@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="iNTRA OFFICE" />
+        <meta http-equiv="content-type" content="text/html">
+
+        <title>Digital Data</title>
+
+        <!--Animate.css-->
+       <link href="animate.css" rel="stylesheet" type="text/css"/>
+
+        <!--Javascript&JQuery-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="waypoints.min.js"></script>
+        <script type="text/javascript">
+            jQuery(function($) { 
+                $('h2').waypoint(function() {
+                    $(this).toggleClass( 'bounceIn animated' );
+                },
+                                 {
+                    offset: '70%',
+                    triggerOnce: true
+                });
+
+                $('li').waypoint(function() {
+                    $(this).toggleClass( 'fadeInLeft animated' );
+                },
+                                 {
+                    offset: '70%',
+                    triggerOnce: true
+                });        
+
+                $('img').waypoint(function() {
+                    $(this).toggleClass( 'rotateIn animated' );
+                },
+                                  {
+                    offset: '70%',
+                    triggerOnce: true
+                });        
+            });
+        </script>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .container {
+                width: 320px;
+                margin: auto;
+                font-size: 14px;
+                color:#333;            
+            }
+            .container p, .container li{
+                line-height: 24px;
+            }
+            .container li {
+                padding-bottom: 10px;
+                opacity: 0;
+            }
+            .container h2 {
+                margin-top: 25px;
+                opacity: 0;
+            }
+            h1 { font-size: 34px; }
+            h2 { font-size: 28px; }
+            img { opacity:0; }
+        </style>
+    </head>
+    <body>
+        <section id="content">
+            <div class="container">
+                <h1 class="rubberBand">Demo Animaciones</h1>
+                <h2>Lorem ipsum dolor sit amet</h2>       
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum, erat non varius facilisis, purus nisi vestibulum tortor, sed lacinia nunc magna non neque. Integer at libero justo. Suspendisse varius accumsan erat, quis sollicitudin nisl posuere at. Maecenas fermentum, nunc id vehicula ullamcorper, neque eros tincidunt dolor, at vulputate odio elit sed justo. Donec tristique consequat tempor. Sed ante est, molestie et velit in, varius tempus nisi. Mauris ac turpis faucibus, aliquam nunc tempus, placerat nisl. Etiam et vulputate turpis, quis suscipit mi. 
+                </p>
+                <p>Sed accumsan vel neque interdum commodo. Donec vel ligula eu erat pretium luctus et at lorem. Nam gravida suscipit augue. Vestibulum ac tortor ullamcorper, lacinia ipsum in, feugiat est. Sed nec sem vel justo fermentum gravida non et orci. Aenean elementum urna a aliquam suscipit. Donec hendrerit sem a blandit cursus. Aenean ac magna dictum, tempus urna eu, consectetur diam.</p>
+                <p>Sed accumsan vel neque interdum commodo. Donec vel ligula eu erat pretium luctus et at lorem. Nam gravida suscipit augue. Vestibulum ac tortor ullamcorper, lacinia ipsum in, feugiat est. Sed nec sem vel justo fermentum gravida non et orci. Aenean elementum urna a aliquam suscipit. Donec hendrerit sem a blandit cursus. Aenean ac magna dictum, tempus urna eu, consectetur diam.</p>
+
+                <h2>Nam ultricies tincidunt eros, sed feugiat neque.</h2> 
+                <p>Pellentesque auctor, risus nec molestie varius, nulla magna consequat sapien, vel feugiat diam mi sed diam. Vestibulum  viverra magna varius viverra aliquam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque suscipit turpis at sapien volutpat rutrum. Integer vestibulum a augue ac adipiscing. Fusce id iaculis felis.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum, erat non varius facilisis, purus nisi vestibulum tortor, sed lacinia nunc magna non neque. Integer at libero justo. Suspendisse varius accumsan erat, quis sollicitudin nisl posuere at. Maecenas fermentum, nunc id vehicula ullamcorper, neque eros tincidunt dolor, at vulputate odio elit sed justo. Donec tristique consequat tempor. Sed ante est, molestie et velit in, varius tempus nisi. Mauris ac turpis faucibus, aliquam nunc t
+
+                <h2>Etiam venenatis purus</h2> 
+                <p>Sed ante facilisis volutpat vitae at odio. Integer ac consectetur risus, at blandit sem. Vestibulum at nisi non metus suscipit faucibus ac ut nisl. Aenean pulvinar congue suscipit. </p>
+                <ul>
+                    <li>In ullamcorper fringilla viverra.</li> 
+                    <li>Pellentesque sodales, nisi quis scelerisque pulvinar</li>
+                    <li>Dui lorem feugiat eros, sed aliquet felis elit a ligula.</li> 
+                    <li>Nullam faucibus nisl nec sagittis malesuada. Etiam non malesuada tellus, sit amet commodo diam.</li>
+                </ul>
+
+                <p>Quisque a pharetra nisl. Sed ultrices, massa a tincidunt aliquet, ante diam lacinia sapien, eget pharetra lorem massa rutrum tortor. Vivamus non tempor urna, et hendrerit nunc. Duis at tristique libero. Vivamus porttitor urna ligula, tristique malesuada nulla semper id. Nullam nisi augue, ullamcorper eu sapien a, adipiscing pellentesque risus. Morbi placerat elementum dolor, ac viverra nulla rhoncus sit amet.</p>
+
+                <h2>Vivamus ullamcorper lacinia ultricies.</h2> 
+                <p>
+                    <img src="http://miguelmanchego.com/samples/2014/glipo.png" />
+                    <img src="http://miguelmanchego.com/samples/2014/glipo.png" />
+                    <img src="http://miguelmanchego.com/samples/2014/glipo.png" />
+
+                <p>Proin pharetra eros sed dignissim viverra. Sed ut accumsan lorem, at aliquam massa. Curabitur a dui vel leo semper egestas. Maecenas fermentum nunc non egestas condimentum. Maecenas faucibus sed arcu egestas consequat. In fringilla, magna a fermentum rhoncus, enim lacus fermentum ligula, at scelerisque ipsum enim in magna. Aenean diam nisl, venenatis vel tincidunt sed, pulvinar a odio. Sed pellentesque, arcu sed vestibulum suscipit, lectus velit fermentum nisl, in semper lacus est molestie neque. Pellentesque nibh ipsum, pharetra eu facilisis ut, luctus a eros. Nullam luctus magna quis tristique mollis.</p> 
+            </div>
+        </section>
+
+    </body>
+</html>
