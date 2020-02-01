@@ -258,7 +258,12 @@ background-color: #5374a9;
       width: 100%;
       overflow:hidden;
 }
-
+.fuentetexto{
+      font-family: 'Catamaran', sans-serif;
+}
+.azul{
+    color:#5374a9;     
+}
 
 
 #seccion1{
@@ -287,4 +292,11 @@ background-color: #5374a9;
       min-height: 750px;
       width: 100%;
 }
+.esconder{
+      opacity: 0;
+}
+#productos > h1{
+      opacity: 0;
+}
+
 
