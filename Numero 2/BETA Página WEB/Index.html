@@ -9,6 +9,7 @@
 
             <!--Bootstrap-->
 
+
             <link rel="stylesheet" type="text/css" href="bootstrap-3.4.1/css/bootstrap.min.css"/>
             <link rel="stylesheet" type="text/css" href="bootstrap-3.4.1/css/bootstrap-theme.css"/>
 
@@ -31,6 +32,27 @@
                   jQuery(function($) { 
                         $('#tseccion1').waypoint(function() {
                               $(this).toggleClass( 'bounceIn animated' );
+                        },
+                                                 {
+                              offset: '70%',
+                              triggerOnce: true
+                        });  
+                        $('#sloganseccion3').waypoint(function() {
+                              $(this).toggleClass( 'rotateInDownLeft animated' );
+                        },
+                                                      {
+                              offset: '70%',
+                              triggerOnce: true
+                        });  
+                        $('#productos').waypoint(function() {
+                                $(this).toggleClass( 'rotateInDownLeft animated' );
+                        },
+                                                 {
+                              offset: '70%',
+                              triggerOnce: true
+                        });  
+                        $('#servicios').waypoint(function() {
+                              $(this).toggleClass( 'rotateInDownRight animated' );
                         },
                                                  {
                               offset: '70%',
@@ -80,37 +102,135 @@
                   <a href="javascript:void();" class="menos">&lsaquo;</a>
             </section>
             <section id="seccion2" class="col-md-12 col-xs-12 col-sm-12 fuentetexto">
-                  <div id="tseccion1" class="col-md-7"  style="margin-top: 40px;">
-                        <b class="azul col-md-12 col-xs-12 col-sm-10" >
-                              Integramos herramientas tecnológicas a tu proceso de negocio
-                        </b>
+                  <div id="tseccion1" class="col-md-7 esconder"  style="margin-top: 40px;text-align: justify;">
+                        <h1 class="fuentetexto azul" style="font-weight: 900;">Integramos herramientas tecnológicas a tu proceso de negocio.</h1>
                         <br/>
-                        <b class="azul col-md-12 col-xs-12 col-sm-10" >
-                              Mejorando tu control documental.
-                        </b>
+                        <h1 class="fuentetexto azul" style="font-weight: 900;">Mejoramos tu control documental con inteligencia artificial.</h1>
                         <br/>
-                        <p class="col-md-12 azul">
-                              <br/>
-                              Combinamos recuersos humanos, así como procesos de tecnología de punta con scanners,
-                              software y ciencia de datos. <br> <br>
-                              En <b>Digital Data</b> hemos brindado soluciones a empresas de clase mundial,
-                              así como instituciones gubernamentales, ofreciendoles hasta 99.9% de garantía
-                              en los procesos de digitalización de documentos masivos,
-                              como el control y la seguridad de los mismos.
-                              Contamos con la infrestructura adecuada para brindarte una solución
-                              que automatice tus procesos con base en las reglas de tu negrocio.
-                              <br> <br>
-                              <a  href="Somos.html" class="btn btn-primary btn-lg" href="DD.html" role="button">Conoce más de nuestra historia...</a>
+                        <p class="fuentetexto azul" style="text-align: justify;font-size: 20px;">Combinamos recursos humanos con tecnología de punta con scanners, software y ciencia de datos.<br/>
+                              En Digital Data brindamos soluciones a empresas de clase mundial, así como a instituciones gubernamentales, ofreciéndoles hasta un 99.9% de calidad en nuestros productos y servicios.
+                              <br/>Contamos con la infraestructura adecuada para brindarte una solución que automatice tus procesos documentales con base en las reglas de tu negocio.
                         </p>
+
+                  </div>
+            </section>
+            <section id="seccion3" class="col-md-12 col-xs-12 col-sm-12">
+                  <div class="row col-md-12 col-xs-12 col-sm-12">
+                        <div class="col-md-12 col-xs-12 col-sm-12 fuentetexto" style="background-color:white; margin: 20px;padding-bottom: 40px;">
+                              <div class="col-md-12 col-xs-12 col-sm-12 esconder" id="sloganseccion3">
+                                    <center><h1 class="fuentetexto azul">Transformamos tus datos en oportunidades</h1></center>
+                                    <br/>
+                              </div>
+                              <div class="col-md-6 col-xs-12 col-sm-6">
+                                    <div class="esconder col-md-12 col-xs-12 col-sm-12" id="productos">
+                                          <center><h1 class="fuentetexto azul">ddoc Products</h1></center>
+                                          <br/>
+                                          <p style="text-align: justify; float: left;">Digital Data ha desarrollado una familia de Softwares para mejorar la administración documental con integración OCR y machine learning.</p>
+                                          <br/> 
+                                          <div class="col-md-12 col-xs-12 col-sm-12" style="margin-top: 10px;"  id="productos">
+                                                <div class="col-md-6 col-xs-12 col-sm-6">
+                                                      <h1 class="fuentetexto azul" style="font-size: 20px;">ddoc Gestor Documental</h1><br/>
+                                                      Define, almacena y localiza rápidamente entre tus expedientes y documentos electrónicos
+                                                </div>
+                                                <div class="col-md-6 col-xs-12 col-sm-6">
+                                                      <h1 class="fuentetexto azul" style="font-size: 20px;">ddoc lnvoice Control</h1><br/>
+                                                      Controla tus facturas electrónicas nacionales de una manera óptima
+                                                </div>
+                                                <div class="col-md-12 col-xs-12 col-sm-12">
+                                                      <center><h1 class="fuentetexto azul"> ddoc ML</h1></center>
+                                                      Mejora tu control documental por medio de nuestras herramientas reforzadas con machine learning.
+                                                </div>
+                                                <div class="col-md-3 col-xs-12 col-sm-3">
+                                                      <center>
+                                                            <h1 class="fuentetexto azul" style="font-size: 10px;">ddoc
+                                                                  Document <br/>
+                                                                  Recognition.
+                                                            </h1>
+                                                      </center>
+
+                                                </div>
+                                                <div class="col-md-3 col-xs-12 col-sm-3">
+                                                      <center><h1 class="fuentetexto azul" style="font-size: 10px;">ddoc 
+                                                            Text<br/>
+                                                            Recognition
+                                                            </h1></center>
+                                                </div>
+                                                <div class="col-md-3 col-xs-12 col-sm-3">
+                                                      <center><h1 class="fuentetexto azul" style="font-size: 10px;">ddoc 
+                                                            Face <br/>
+                                                            Recognition
+                                                            </h1></center>
+                                                </div>
+                                                <div class="col-md-3 col-xs-12 col-sm-3">
+                                                      <center><h1 class="fuentetexto azul" style="font-size: 10px;">
+                                                            ddoc 
+                                                            Signature<br/>
+                                                            Recognition
+                                                            </h1></center>
+                                                </div>
+                                                <div class="col-md-12 col-xs-12 col-sm-12">
+                                                      <div class="col-md-6 col-xs-12 col-sm-">
+                                                            <h1 class="fuentetexto azul" style="font-size: 20px;">
+                                                                  ddoc Control</h1><br/>
+                                                            Controla tu proceso de digitalización y almacenamiento electrónico.
+
+                                                      </div>
+                                                      <div class="col-md-6 col-xs-12 col-sm-">
+                                                            <h1 class="fuentetexto azul" style="font-size: 20px;">
+                                                                  ddoc Control Room.</h1><br/>
+                                                            Controla tus proyectos documentales de manera centralizada.
+
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col-md-6 col-xs-12 col-sm-6 esconder" id="servicios">
+                                    <div class="col-md-12 col-xs-12 col-sm-12">
+                                          <center><h1 class="fuentetexto azul">Servicios</h1></center>
+                                          <br/>
+                                          <p style="text-align: justify;">Digital Data cuenta con una gama de servicios para optimizar tu gestión corporativa.</p>
+                                          <br/> 
+                                          <div class="col-md-12 col-xs-12 col-sm-12" style="margin-top: 10px;">
+                                                <div class="row">                                              
+                                                      <div class="col-md-6 col-xs-12 col-sm-12">
+                                                            <h1 class="fuentetexto azul" style="font-size: 20px;"> Digitalización y captura de datos</h1><br/>
+                                                            ¡Convertimos de manera óptima tu documentación física en digital!
+                                                      </div>
+                                                      <div class="col-md-6 col-xs-12 col-sm-6">
+                                                            <h1 class="fuentetexto azul" style="font-size: 20px;"> Ciencias de datos</h1><br/>
+                                                            Controla tu proceso documental con nuestras herramientas complementadas con Machine Learning.
+                                                      </div>
+                                                </div>
+                                                <div class="row" style="margin-top: 30px;"> 
+                                                      <div class="col-md-6 col-xs-12 col-sm-6">
+                                                            <h1 class="fuentetexto azul" style="font-size: 20px;"> Venta y renta de Scanners</h1><br/>
+                                                            Somos distribuidores de marcas reconocidas internacionalmente.
+                                                            <br/>
+                                                            <br/>
+                                                            <b>¡Conoce nuestro catálogo!</b>
+                                                      </div>
+                                                      <div class="col-md-6 col-xs-12 col-sm-6">
+                                                            <h1 class="fuentetexto azul" style="font-size: 20px;"> Centro documentales móviles.</h1>
+                                                            Contamos con centros digitales móviles capacitados con tecnología de punta.
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
                   </div>
             </section>
             <script>
                   function myFunction() {
                         var x = document.getElementById("myTopnav");
+                        var y=document.getElementById("slider-wrapper");
                         if (x.className === "topnav") {
                               x.className += " responsive";
+                              y.style+="´padding-top:0px;";
                         } else {
                               x.className = "topnav";
+                              y.style+="´padding-top:70px;";
                         }
                   }
             </script>
