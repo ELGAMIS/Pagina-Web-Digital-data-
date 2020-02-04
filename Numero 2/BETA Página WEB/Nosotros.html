@@ -26,40 +26,135 @@
 
         <!--Javascript&JQuery-->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
         <script src="waypoints.min.js"></script>
         <script src="JS/slider.js"></script>
         <script type="text/javascript">
+            function count(){
+                var counter = { var: 0 };
+                TweenMax.to(counter, 2, {
+                    var: 10, 
+                    onUpdate: function () {
+                        var number = Math.ceil(counter.var);
+                        $('#desarrollos').html(number);
+                        if(number === counter.var){ count.kill(); }
+                    },
+                    onComplete: function(){
+                        count();
+                    },    
+                    ease:Circ.easeOut
+                });
+            }
+            function count2(){
+                var counter={var:0};
+                TweenMax.to(counter, 2, {
+                    var: 345, 
+                    onUpdate: function () {
+                        var number = Math.ceil(counter.var);
+                        $('#clientes').html(number);
+                        if(number === counter.var){ count.kill(); }
+                    },
+                    onComplete: function(){
+                        count2();
+                    },    
+                    ease:Circ.easeOut
+                });
+            }
+            function count3(){
+                var counter={var:0};
+                TweenMax.to(counter, 2, {
+                    var: 5000000, 
+                    onUpdate: function () {
+                        var number = Math.ceil(counter.var);
+                        var valor=new Intl.NumberFormat().format(number);
+                        $('#docs').html(valor);
+                        if(number === counter.var){ count.kill(); }
+                    },
+                    onComplete: function(){
+                        count3();
+                    },    
+                    ease:Circ.easeOut
+                });
+            }
+            function count4(){
+                var counter={var:0};
+                TweenMax.to(counter, 1, {
+                    var: 23, 
+                    onUpdate: function () {
+                        var number = Math.ceil(counter.var);
+                        $('#aliados').html(number);
+                        if(number === counter.var){ count.kill(); }
+                    },
+                    onComplete: function(){
+                        count4();
+                    },    
+                    ease:Circ.easeOut
+                });
+            }
+            function count5(){
+                var counter={var:0};
+                TweenMax.to(counter, 2, {
+                    var: 400, 
+                    onUpdate: function () {
+                        var number = Math.ceil(counter.var);
+                        $('#colabs').html(number);
+                        if(number === counter.var){ count.kill(); }
+                    },
+                    onComplete: function(){
+                        count5();
+                    },    
+                    ease:Circ.easeOut
+                });
+            }
+            function count6(){
+                var counter={var:0};
+                TweenMax.to(counter, 2, {
+                    var: 100, 
+                    onUpdate: function () {
+                        var number = Math.ceil(counter.var);
+                        $('#centros').html(number);
+                        if(number === counter.var){ count.kill(); }
+                    },
+                    onComplete: function(){
+                        count6();
+                    },    
+                    ease:Circ.easeOut
+                });
+            }
             jQuery(function($) { 
-                $('#seccion1').waypoint(function() {
-                    $(this).toggleClass( 'bounceIn animated' );
+                $('#sec2-1').waypoint(function() {
+                    count();
+                    count2();
+                    count4();
+                    $(this).toggleClass('fadeIn animated' );
                 },
-                                        {
+                                      {
                     offset: '70%',
                     triggerOnce: true
                 });  
-                $('#seccion2').waypoint(function() {
-                    $(this).toggleClass('bounceIn animated' );
+                $('#sec3-1').waypoint(function() {
+                    $(this).toggleClass('fadeIn animated' );
                 },
-                                        {
-                    offset: '70%',
-                    triggerOnce: true
-                });  
-                $('#seccion3-1').waypoint(function() {
-                    $(this).toggleClass('rotateIn animated' );
-                },
-                                          {
+                                      {
                     offset: '70%',
                     triggerOnce: true
                 });  
                 $('#seccion3-2').waypoint(function() {
-                    $(this).toggleClass('rotateIn animated' );
+                    $(this).toggleClass('fadeIn animated' );
                 },
                                           {
                     offset: '70%',
                     triggerOnce: true
                 });  
+                $('#sec-3').waypoint(function() {
+                    $(this).toggleClass('fadeIn animated' );
+                },
+                                     {
+                    offset: '70%',
+                    triggerOnce: true
+                });  
                 $('#seccion3-3').waypoint(function() {
-                    $(this).toggleClass('rotateInUpLeft animated' );
+                    $(this).toggleClass('fadeIn animated' );
                 },
                                           {
                     offset: '70%',
@@ -78,8 +173,17 @@
                                         {
                     offset: '70%',
                     triggerOnce: true
-                });  
+                });
+                $('#sec4-1').waypoint(function() {
+                    $(this).toggleClass('fadeIn animated' );
+                },
+                                      {
+                    offset: '70%',
+                    triggerOnce: true
+                }); 
             });
+            count3();
+            count5();
         </script>
 
     </head>
@@ -97,8 +201,8 @@
             </section>
         </section>
         <section class="wrapper col-md-12 col-xs-12 col-sm-12">
-            <section id="seccion2" class="col-md-12 col-xs-12 col-sm-12 fuentetexto" style="margin-top: 70px;margin-bottom: 50px;">
-                <div class="col-md-6 col-xs-12 col-sm-6" style="margin-top: 40px;">
+            <section class="col-md-12 col-xs-12 col-sm-12 fuentetexto" style="margin-top: 70px;margin-bottom: 50px;">
+                <div  id="sec2-1" class="col-md-6 col-xs-12 col-sm-6" style="margin-top: 40px;">
                     <h1 class="azul" style="font-weight: 900;font-size: 30px;">Innovamos procesos y creamos soluciones.</h1>
                     <p style="font-size: 17px;">
                         Digital data es la empresa de control documental, especializada en proveer servicios de digitalización, procesos de documentación y manejo de información.<br/><br/>
@@ -111,13 +215,45 @@
                     </p>
                 </div>
                 <div class="col-md-6 col-xs-12 col-sm-6"  style="margin-top: 40px;">
-                    <center>                    <img src="Imagenes/Nosotros1.png" style="width:450px;height:600px;">
+                    <center>                    
+                        <img src="Imagenes/Nosotros1.png" style="width:300px;height:300px;">
                     </center>
-
+                    <div class="col-md-12 col-xs-12 col-sm-12" style="background-image: linear-gradient( 135deg, #5374a9 10%, #ddd 100%);color:white;">                   
+                        <div class="row col-md-12 col-xs-12 col-sm-12">
+                            <div class="col-md-6 col-xs-12 col-sm-6">
+                                <h1 id="desarrollos" class="tablanumero"></h1>
+                                <h2 class="tablatexto">Desarollos de tecnología</h2>
+                            </div>
+                            <div class="col-md-6 col-xs-12 col-sm-6">
+                                <h1 id="clientes" class="tablanumero">345</h1>
+                                <h2 class="tablatexto">Clientes y <br/>casos de exito</h2>
+                            </div>
+                        </div>
+                        <div class="row col-md-12 col-xs-12 col-sm-12">
+                            <div class="col-md-6 col-xs-12 col-sm-6">
+                                <h1 id="docs" class="tablanumero">5,000,000</h1>
+                                <h2 class="tablatexto">Documentos digitalizados</h2>
+                            </div>
+                            <div class="col-md-6 col-xs-12 col-sm-6">
+                                <h1 id="aliados" class="tablanumero">23</h1>
+                                <h2 class="tablatexto">Aliados comerciales </h2>
+                            </div>
+                        </div>
+                        <div class="row col-md-12 col-xs-12 col-sm-12">
+                            <div class="col-md-6 col-xs-12 col-sm-6">
+                                <h1 id="colabs" class="tablanumero">400</h1>
+                                <h2 class="tablatexto">Colaboradores<br/> al año</h2>
+                            </div>
+                            <div class="col-md-6 col-xs-12 col-sm-6">
+                                <h1 id="centros" class="tablanumero">100</h1>
+                                <h2 class="tablatexto">Centros documentales</h2>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section id="seccion3" class="col-md-12 col-xs-12 col-sm-12 fuentetexto">
-                <div id="seccion3-1" class="row col-md-12 col-xs-12 col-sm-12" style="margin-top:20px;vertical-align: middle;">
+                <div id="sec3-1" class="row col-md-12 col-xs-12 col-sm-12" style="margin-top:20px;vertical-align: middle;">
                     <div class="col-md-6 col-xs-12 col-sm-6">
                         <img src="Imagenes/fondosintegrales.jpg" style="width: 100%;height: 100%;">
                     </div>
@@ -147,7 +283,7 @@
                     <div class="col-md-6 col-xs-12 col-sm-6">
                         <img src="Imagenes/CienciaD.jpg" style="width: 100%;height: 100%px;">
                     </div>
-                    <div class="col-md-6 col-xs-12 col-sm-6">
+                    <div id="sec-3" class="col-md-6 col-xs-12 col-sm-6">
 
                         <h1 class="azul" style="font-size: 50px;margin-top: 40px;">Objetivos de Calidad</h1>
                         <br/>
@@ -161,7 +297,7 @@
                 </div>
             </section> 
             <section id="seccion4" class="col-md-12 col-xs-12 col-sm-12 fuentetexto" style="margin-bottom: 10px;">
-                <div class="col-md-6 col-xs-12 col-sm-6">
+                <div id="sec4-1" class="col-md-6 col-xs-12 col-sm-6">
                     <h1 class="azul" style="font-size:40px;margin-top: 10px;">Política de calidad.</h1>
                     <br/>
                     <p style="font-size: 15px;">
@@ -224,10 +360,12 @@
                     </div>
                 </div> 
             </section>
-
             <section id="seccion6" class="col-md-12 col-xs-12 col-sm-12 fuentetexto">
                 <center>
-                    <h1 style="font-size: 60px;" class="azul">ALIANZAS ESTRATÉGICAS</h1></center> 
+                    <h1 style="font-size: 60px;" class="azul">ALIANZAS ESTRATÉGICAS</h1>
+                    <p style="font-size: 20px;text-align: justify;">En Digital Data no solo utilizamos tecnología de las marcas más reconocidas en el mercado de digitalización y captura de datos, sino que somos distribuidores de las mismas, al igual de software de tecnología de punta.
+                        Por lo que si estas interesado en la compra de productos haz clic y ¡Conócelos!
+                    </p></center> 
                 <div class="row col-md-12 col-xs-12 col-sm-12" style="margin-top: 40px;">
                     <div class="col-md-4 col-xs-12 col-sm-4">
                         <img src="Imagenes/imagenrellenoejemplo.png" style="width:100%; height:100%;" onclick="alertDGC('KOFAX.(software)<br/><br/>En varios de nuestros casos de éxito, nos hemos apoyado del software KOFAX, reconocido a nivel mundial en <b>digitalización de documentos y captura de datos</b>, creando sistemas integrales para el procesamiento de información.<br/>Además, hemos logrado integrar nuestros productos <b>ddoc ML</b> a cualquier flujo de trabajo que utilicen las herramientas de KOFAX');">
@@ -295,6 +433,7 @@
             window.alert = function (message) {
                 alertDGC(message);
             };
+
         </script>
     </body>
 </html>
