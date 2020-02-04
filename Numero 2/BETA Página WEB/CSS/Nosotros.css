@@ -104,6 +104,21 @@
     color:#5374a9;     
 }
 
+#sec2-1{
+    opacity: 0;
+}
+#sec3-1{
+    opacity: 0;
+}
+#sec4-1{
+    opacity: 0;
+}
+#sec-3{
+    opacity: 0;
+}
+#seccion3-2{
+    opacity: 0;
+}
 
 #seccion1{
     opacity: 0;
@@ -123,6 +138,7 @@
     min-height: 700px;
 }
 #seccion3{
+
     /*  background-color: #FCFCFC; */
     background-attachment: fixed;
     background-position: center;
@@ -131,7 +147,6 @@
     min-height: 700px;
 }
 #seccion4{
-
     /*  background-color: #FCFCFC; */
     background-attachment: fixed;
     background-position: center;
@@ -167,3 +182,14 @@
 .dgcAlert .dgcVentana .dgcCerrar {height: 25px;width: 25px;float: right; cursor:pointer; background: url(http://www.dgcmedia.es/recursosExternos/cerrarAlert.jpg) no-repeat center center;}
 .dgcAlert .dgcVentana .dgcMensaje { margin: 0 auto; padding-top: 45px; text-align: center; width: 400px;font-size: 20px;}
 .dgcAlert .dgcVentana .dgcAceptar{background:#09C; bottom:20px; display: inline-block; font-size: 12px; font-weight: bold; height: 24px; line-height: 24px; padding-left: 5px; padding-right: 5px;text-align: center; text-transform: uppercase; width: 75px;cursor: pointer; color:#FFF; margin-top:50px;}
+
+.tablanumero{
+    font-weight: 900;
+    font-size:25px;
+    text-align: center;
+}
+.tablatexto{
+    font-weight: 900;
+    font-size:20px;
+    text-align: center;
+}
