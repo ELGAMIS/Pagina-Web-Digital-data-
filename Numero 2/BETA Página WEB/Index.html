@@ -242,8 +242,39 @@
         <img src="Imagenes/DIAGRAMA-HOME.png" style="width:800px;height:450px;" align="Center"> <span> <br> <br> <a target="_blank" class="boton_personalizado" href="soluciones.html"> Conoce más</a></span>
       </div>
     </section>
-    <section class="col-md-12" id="seccionexitos">
-      <b class="col-md-12 azul" align="Center">Sección exitos</b>
+    <section class="col-md-12 col-xs-12 col-sm-12" id="seccionexitos" style="margin-bottom: 30px;">
+      <b class="col-md-12 col-xs-12 col-sm-12 azul" align="Center">Casos de éxito</b>
+      <p class="col-md-12 col-xs-12 col-sm-12" style="font-size: 16px;margin-top: 20px;">En los últimos 20 años hemos prestado nuestros servicios en múltiples proyectos para instituciones gubernamentales y privadas, logrando grandes casos de éxito, digitalizando<br/>
+        y capturando más de 500 millones de documentos.<br/>
+        <b>Algunos de ellos son los siguientes:</b></p>
+      <div class="col-md-3 col-xs-12 col-sm-3">
+        <img src="Imagenes/logos/logos/fonacot.jpg" style="width:300px;height:250px;" class="img-responsive img-thumbnail"
+             onclick="alertDGC('<h1>Instituto del Fondo Nacional para el Consumo de los Trabajadores.</h1><br/><p>Utilizando soluciones integrales en digitalización, biométricos y sistemas de originación de créditos, logramos automatizar 660 ventanillas en todo el país.<br/>Reduciendo tiempos de otorgación de créditos a 45 minutos de las dos horas que antes tomaba.<br/>En la actualidad se ha reducido el tiempo de otorgación a 30 minutos, esto por las implementaciones de nuestros sistemas <b>ddoc ML</b>.</p>');">
+      </div>
+      <div class="col-md-3 col-xs-12 col-sm-3">
+        <img src="Imagenes/logos/logos/jfca.jpg" style="width:300px;height:250px;" class="img-responsive img-thumbnail" onclick="alertDGC('<h1>Junta Federal de Conciliación y Arbitraje.</h1><br/>Bajo el proyecto de Juicio en Línea integramos una solución con la digitalización de 900 mil expedientes con un total de 320 millones de imágenes. Sin duda, uno de los proyectos más grandes que se han hecho en Latinoamérica.');">
+      </div>
+      <div class="col-md-3 col-xs-12 col-sm-3">
+        <img src="Imagenes/logos/logos/circulo%20k.jpg" style="width:300px;height:250px;" class="img-responsive img-thumbnail" onclick="alertDGC('<h1>Círculo K.</h1> <br/><br/>Desde el año 2015 hemos llevado el control electrónico de las facturas de sus proveedores a nivel nacional por medio de ddoc Invoice Control, con un total de más de 1,250,000 facturas procesadas y una recepción de 1,000 facturas diarias vía e- mail.');">
+      </div>
+      <div class="col-md-3 col-xs-12 col-sm-3">
+        <img src="Imagenes/logos/logos/unilever.jfif" style="width:300px;height:250px;" class="img-responsive img-thumbnail" onclick="alertDGC('<h1>Unilever</h1> <br/>Durante 8 años se han digitalizado y capturado más de 3 millones de evidencias de pago, así como llevado su control digital por medio de ddoc Gestor documental, dando como resultado una optimización notoria en sus tiempos de cobranza.');">
+      </div>
+      <div class="col-md-2 col-xs-0 col-sm-3">
+      </div>
+      <div class="col-md-3 col-xs-12 col-sm-3" style="margin-top:30px;">
+        <img src="Imagenes/logos/logos/colima.jfif" style="width:300px;height:250px;" class="img-responsive img-thumbnail" onclick="alertDGC('<h1>Instituto para el Registro del Territorio del Estado de Colima.</h1><br/>Digitalizamos y capturamos 900 mil actos del Registro Público de Estado de Colima, así como los expedientes de predios del Catastro del Estado, facilitando la vinculación entre ambas Instituciones.');">
+      </div>
+      <div class="col-md-2 col-xs-0 col-sm-3">
+      </div>
+      <div class="col-md-3 col-xs-12 col-sm-3" style="margin-top:30px;">
+        <img src="Imagenes/logos/logos/televisa.jfif" style="width:300px;height:250px;" class="img-responsive img-thumbnail" onclick="alertDGC('<h1>Televisa, S.A. – Presidencia Jurídica.</h1><br/>Desde el 2013 hemos digitalizado más de 50 mil expedientes jurídicos integrandolos a Documentum. A su vez brindamos la organización y codificación del archivo físico.');">
+      </div>
+       <div class="col-md-2 col-xs-0 col-sm-3">
+      </div>
+       <div class="col-md-12 col-xs-12 col-sm-12" style="text-align: center;">
+         <h2>Tu puedes ser nuestro próximo caso de éxito <b>¿Aún dudas?<a href="#seccionContacto" style="text-decoration: none;">Contáctanos.</a></b></h2>
+      </div>
     </section>
     <section class="col-md-12" id="seccionbeneficios">
       <b class="col-md-12 azul" align="Center">Sección beneficios</b>
@@ -384,12 +415,36 @@
     <script>
       function myFunction() {
         var x = document.getElementById("myTopnav");
+        var y=document.getElementById("slider-wrapper");
         if (x.className === "topnav") {
           x.className += " responsive";
+          y.style+="´padding-top:0px;";
         } else {
           x.className = "topnav";
+          y.style+="´padding-top:70px;";
         }
       }
+      function alertDGC(mensaje)
+      {
+        var dgcTiempo=500
+        var ventanaCS='<div class="dgcAlert"><div class="dgcVentana"><div class="dgcCerrar"></div><div class="dgcMensaje">'+mensaje+'<br></div></div></div>';
+        $('body').append(ventanaCS);
+        var alVentana=$('.dgcVentana').height();
+        var alNav=$(window).height();
+        var supNav=$(window).scrollTop();
+        $('.dgcAlert').css('height',$(document).height());
+        $('.dgcVentana').css('top',((alNav-alVentana)/2+supNav-100)+'px');
+        $('.dgcAlert').css('display','block');
+        $('.dgcAlert').animate({opacity:1},dgcTiempo);
+        $('.dgcCerrar,.dgcAceptar').click(function(e) {
+          $('.dgcAlert').animate({opacity:0},dgcTiempo);
+          setTimeout("$('.dgcAlert').remove()",dgcTiempo);
+        });
+      }
+      window.alert = function (message) {
+        alertDGC(message);
+      };
+
     </script>
 
     <!--script hover scanner-->
