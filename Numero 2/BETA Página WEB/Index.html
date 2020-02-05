@@ -1,239 +1,405 @@
 <!DOCTYPE html>
 <html>
-      <head>
-            <meta charset="utf-8">
-            <meta name="author" content="iNTRA OFFICE" />
-            <meta http-equiv="content-type" content="text/html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="iNTRA OFFICE" />
+    <meta http-equiv="content-type" content="text/html">
 
-            <title>Digital Data</title>
+    <title>Digital Data</title>
 
-            <!--Bootstrap-->
+    <!--Bootstrap-->
 
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.4.1/css/bootstrap-theme.css"/>
 
-            <link rel="stylesheet" type="text/css" href="bootstrap-3.4.1/css/bootstrap.min.css"/>
-            <link rel="stylesheet" type="text/css" href="bootstrap-3.4.1/css/bootstrap-theme.css"/>
+    <!--Personal Style-->
+    <link href="CSS/style.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/component.css">
 
-            <!--Personal Style-->
-            <link href="CSS/style.css" type="text/css" rel="stylesheet"/>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Fuente-->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'/>
+    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet"/>
 
-            <!--Fuente-->
-            <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'/>
-            <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet"/>
+    <!--Animate.css-->
+    <link href="animate.css" rel="stylesheet" type="text/css"/>
 
-            <!--Animate.css-->
-            <link href="animate.css" rel="stylesheet" type="text/css"/>
+    <!--Javascript&JQuery-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="waypoints.min.js"></script>
+    <script src="JS/slider.js"></script>
+    <script type="text/javascript">
+      jQuery(function($) {
+        $('#tseccion1').waypoint(function() {
+          $(this).toggleClass( 'bounceIn animated' );
+        },
+                                 {
+          offset: '70%',
+          triggerOnce: true
+        });
+        $('#sloganseccion3').waypoint(function() {
+          $(this).toggleClass( 'bounceInLeft animated' );
+        },
+                                      {
+          offset: '70%',
+          triggerOnce: true
+        });
+        $('#productos').waypoint(function() {
+          $(this).toggleClass( 'bounceInLeft animated' );
+        },
+                                 {
+          offset: '70%',
+          triggerOnce: true
+        });
+        $('#servicios').waypoint(function() {
+          $(this).toggleClass( 'bounceInRight animated' );
+        },
+                                 {
+          offset: '70%',
+          triggerOnce: true
+        });
+      });
+    </script>
 
-            <!--Javascript&JQuery-->
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-            <script src="waypoints.min.js"></script>
-            <script src="JS/slider.js"></script>
-            <script type="text/javascript">
-                  jQuery(function($) { 
-                        $('#tseccion1').waypoint(function() {
-                              $(this).toggleClass( 'bounceIn animated' );
-                        },
-                                                 {
-                              offset: '70%',
-                              triggerOnce: true
-                        });  
-                        $('#sloganseccion3').waypoint(function() {
-                              $(this).toggleClass( 'rotateInDownLeft animated' );
-                        },
-                                                      {
-                              offset: '70%',
-                              triggerOnce: true
-                        });  
-                        $('#productos').waypoint(function() {
-                                $(this).toggleClass( 'rotateInDownLeft animated' );
-                        },
-                                                 {
-                              offset: '70%',
-                              triggerOnce: true
-                        });  
-                        $('#servicios').waypoint(function() {
-                              $(this).toggleClass( 'rotateInDownRight animated' );
-                        },
-                                                 {
-                              offset: '70%',
-                              triggerOnce: true
-                        });  
-                  });
-            </script>
+  </head>
+  <body>
+    <section class="topnav" id="myTopnav">
+      <section class="navsec">
+        <a href="#"><center><img class="iconomenu" src="https://img.icons8.com/small/20/000000/home.png"><br/>Inicio</center></a>
+        <a href="#"><center><img class="iconomenu" src="https://img.icons8.com/dotty/20/000000/link-company-parent.png"><br/>Nosotros</center></a>
+        <a href="#"><center><img class="iconomenu" src="https://img.icons8.com/wired/20/000000/idea-sharing.png"><br/>Soluciones integrales</center></a>
+        <a href="#"><center><img class="iconomenu" src="https://img.icons8.com/wired/20/000000/meeting.png"><br/>Clientes</center></a>
+        <a href="#"><center><img class="iconomenu" src="https://img.icons8.com/ios/20/000000/search-contacts.png"><br/>Contacto</center></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </section>
+    </section>
+    <section id="slider-wrapper" style="padding-top: 70px;">
+      <div id="slider">
 
-      </head>
-      <body>
-            <section class="topnav" id="myTopnav">
-                  <section class="navsec">
-                        <a href="#"><center><img class="iconomenu" src="https://img.icons8.com/small/20/000000/home.png"><br/>Inicio</center></a>
-                        <a href="#"><center><img class="iconomenu" src="https://img.icons8.com/dotty/20/000000/link-company-parent.png"><br/>Nosotros</center></a>
-                        <a href="#"><center><img class="iconomenu" src="https://img.icons8.com/wired/20/000000/idea-sharing.png"><br/>Soluciones integrales</center></a>
-                        <a href="#"><center><img class="iconomenu" src="https://img.icons8.com/wired/20/000000/meeting.png"><br/>Clientes</center></a>
-                        <a href="#"><center><img class="iconomenu" src="https://img.icons8.com/ios/20/000000/search-contacts.png"><br/>Contacto</center></a>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                              <i class="fa fa-bars"></i>
-                        </a>
-                  </section>
-            </section>
-            <section id="slider-wrapper" style="padding-top: 70px;">
-                  <div id="slider">
+        <a href="javascript:void();">
+          <img src="Imagenes/Fondo1.jpg" style="opacity: 1;"/>
+          <h1 style="color:black; background-color: #fcfcfc;opacity: .9;">Digital Data 20 años de experiencia en digitalización y captura de datos.</h1>
+        </a>
+        <a href="javascript:void();">
+          <img src="Imagenes/Fondo2.jpg"/>
+          <h1 style="color:black; background-color: #fcfcfc;opacity: .9;">
+            Desarrollamos sistemas integrales de administración electrónica de documentos.</h1>
+        </a>
+        <a href="javascript:void();">
+          <img src="Imagenes/Fondo3.jpg"/>
+          <h1 style="color:black; background-color: #fcfcfc;opacity: .9;">
+            Innovamos tus procesos documentales con herramientas de Machine Learning.</h1>
+        </a>
+        <a href="javascript:void();">
+          <img src="Imagenes/1.jpg"/>
+          <h1 style="color:black; background-color: #fcfcfc;opacity: .9;">
+            Integramos soluciones de acuerdo a las necesidades de tu proceso.</h1>
+        </a>
+      </div>
+      <a href="javascript:void();" class="mas">&rsaquo;</a>
+      <a href="javascript:void();" class="menos">&lsaquo;</a>
+    </section>
+    <section id="seccion2" class="col-md-12 col-xs-12 col-sm-12 fuentetexto">
+      <div id="tseccion1" class="col-md-7"  style="margin-top: 40px;">
+        <b class="azul col-md-12 col-xs-12 col-sm-10" >
+          Integramos herramientas tecnológicas a tu proceso de negocio
+        </b>
+        <br/>
+        <b class="azul col-md-12 col-xs-12 col-sm-10" >
+          Mejorando tu control documental.
+        </b>
+        <br/>
+        <p class="col-md-12 azul" style="font-size: 17px;">
+          <br/>
+          Combinamos recursos humanos con tecnología de punta en scanners, software y ciencia de datos. <br> <br>
 
-                        <a href="javascript:void();">
-                              <img src="Imagenes/Fondo1.jpg" style="opacity: 1;"/>
-                              <h1 style="color:black; background-color: #fcfcfc;opacity: .9;">Digital Data 20 años de experiencia en digitalización y captura de datos.</h1>
-                        </a>
-                        <a href="javascript:void();">
-                              <img src="Imagenes/Fondo2.jpg"/>
-                              <h1 style="color:black; background-color: #fcfcfc;opacity: .9;">
-                                    Desarrollamos sistemas integrales de administración electrónica de documentos.</h1>
-                        </a>
-                        <a href="javascript:void();">
-                              <img src="Imagenes/Fondo3.jpg"/>
-                              <h1 style="color:black; background-color: #fcfcfc;opacity: .9;">
-                                    Innovamos tus procesos documentales con herramientas de Machine Learning.</h1>
-                        </a>
-                        <a href="javascript:void();">
-                              <img src="Imagenes/1.jpg"/>
-                              <h1 style="color:black; background-color: #fcfcfc;opacity: .9;">
-                                    Integramos soluciones de acuerdo a las necesidades de tu proceso.</h1>
-                        </a>
+          En Digital Data brindamos soluciones a empresas de clase mundial, así como a instituciones <br>
+          gubernamentales, ofreciendo un muy alto grado de calidad en nuestros productos y servicios.  <br> <br>
+          Contamos con la infraestructura adecuada para brindarte una solución que automatice tus <br>
+          procesos documentales con base en las reglas de tu negocio. <br> <br>
+
+          <a  href="Nosotros.html" class="btn btn-primary btn-lg" href="DD.html" role="button">Conoce más de nuestra historia...</a>
+        </p>
+      </div>
+    </section>
+    <section id="seccion3" class="col-md-12 col-xs-12 col-sm-12">
+      <div class="row col-md-12 col-xs-12 col-sm-12">
+        <div class="col-md-12 col-xs-12 col-sm-12 fuentetexto" style="background-color:white; margin: 20px;padding-bottom: 40px;">
+          <div class="col-md-12 col-xs-12 col-sm-12 esconder" id="sloganseccion3">
+            <center><h1 class="fuentetexto azul"></h1></center>
+            <div class="col-md-12 col-xs-12 col-sm-12" align="Center">
+              <b class="fuentetexto azul" align="center"> Transformamos tus datos en oportunidades</b>
+            </div>
+            <br/> <br>
+          </div>
+          <div class="col-md-6 col-xs-12 col-sm-6">
+            <div class="esconder col-md-12 col-xs-12 col-sm-12" id="productos">
+              <center><h1 class="fuentetexto azul">ddoc Products</h1></center>
+              <br/>
+              <p style="text-align: justify; float: left;">Digital Data ha desarrollado una familia de Softwares para mejorar la administración documental con integración OCR y machine learning.</p>
+              <br/>
+              <div class="col-md-12 col-xs-12 col-sm-12" style="margin-top: 10px;"  id="productos">
+                <div class="col-md-6 col-xs-12 col-sm-6">
+                  <h1 class="fuentetexto azul" style="font-size: 20px;">ddoc Gestor Documental</h1><br/>
+                  Define, almacena y localiza rápidamente entre tus expedientes y documentos electrónicos
+                </div>
+                <div class="col-md-6 col-xs-12 col-sm-6">
+                  <h1 class="fuentetexto azul" style="font-size: 20px;">ddoc lnvoice Control</h1><br/>
+                  Controla tus facturas electrónicas nacionales de una manera óptima
+                </div>
+                <div class="col-md-12 col-xs-12 col-sm-12">
+                  <center><h1 class="fuentetexto azul"> ddoc ML</h1></center>
+                  Mejora tu control documental por medio de nuestras herramientas reforzadas con machine learning.
+                </div>
+                <div class="col-md-3 col-xs-12 col-sm-3">
+                  <center>
+                    <h1 class="fuentetexto azul" style="font-size: 10px;">ddoc
+                      Document <br/>
+                      Recognition.
+                    </h1>
+                  </center>
+
+                </div>
+                <div class="col-md-3 col-xs-12 col-sm-3">
+                  <center><h1 class="fuentetexto azul" style="font-size: 10px;">ddoc
+                    Text<br/>
+                    Recognition
+                    </h1></center>
+                </div>
+                <div class="col-md-3 col-xs-12 col-sm-3">
+                  <center><h1 class="fuentetexto azul" style="font-size: 10px;">ddoc
+                    Face <br/>
+                    Recognition
+                    </h1></center>
+                </div>
+                <div class="col-md-3 col-xs-12 col-sm-3">
+                  <center><h1 class="fuentetexto azul" style="font-size: 10px;">
+                    ddoc
+                    Signature<br/>
+                    Recognition
+                    </h1></center>
+                </div>
+                <div class="col-md-12 col-xs-12 col-sm-12">
+                  <div class="col-md-6 col-xs-12 col-sm-">
+                    <h1 class="fuentetexto azul" style="font-size: 20px;">
+                      ddoc Control</h1><br/>
+                    Controla tu proceso de digitalización y almacenamiento electrónico.
+
                   </div>
-                  <a href="javascript:void();" class="mas">&rsaquo;</a>
-                  <a href="javascript:void();" class="menos">&lsaquo;</a>
-            </section>
-            <section id="seccion2" class="col-md-12 col-xs-12 col-sm-12 fuentetexto">
-                  <div id="tseccion1" class="col-md-7 esconder"  style="margin-top: 40px;text-align: justify;">
-                        <h1 class="fuentetexto azul" style="font-weight: 900;">Integramos herramientas tecnológicas a tu proceso de negocio.</h1>
-                        <br/>
-                        <h1 class="fuentetexto azul" style="font-weight: 900;">Mejoramos tu control documental con inteligencia artificial.</h1>
-                        <br/>
-                        <p class="fuentetexto azul" style="text-align: justify;font-size: 20px;">Combinamos recursos humanos con tecnología de punta con scanners, software y ciencia de datos.<br/>
-                              En Digital Data brindamos soluciones a empresas de clase mundial, así como a instituciones gubernamentales, ofreciéndoles hasta un 99.9% de calidad en nuestros productos y servicios.
-                              <br/>Contamos con la infraestructura adecuada para brindarte una solución que automatice tus procesos documentales con base en las reglas de tu negocio.
-                        </p>
+                  <div class="col-md-6 col-xs-12 col-sm-">
+                    <h1 class="fuentetexto azul" style="font-size: 20px;">
+                      ddoc Control Room.</h1><br/>
+                    Controla tus proyectos documentales de manera centralizada.
 
                   </div>
-            </section>
-            <section id="seccion3" class="col-md-12 col-xs-12 col-sm-12">
-                  <div class="row col-md-12 col-xs-12 col-sm-12">
-                        <div class="col-md-12 col-xs-12 col-sm-12 fuentetexto" style="background-color:white; margin: 20px;padding-bottom: 40px;">
-                              <div class="col-md-12 col-xs-12 col-sm-12 esconder" id="sloganseccion3">
-                                    <center><h1 class="fuentetexto azul">Transformamos tus datos en oportunidades</h1></center>
-                                    <br/>
-                              </div>
-                              <div class="col-md-6 col-xs-12 col-sm-6">
-                                    <div class="esconder col-md-12 col-xs-12 col-sm-12" id="productos">
-                                          <center><h1 class="fuentetexto azul">ddoc Products</h1></center>
-                                          <br/>
-                                          <p style="text-align: justify; float: left;">Digital Data ha desarrollado una familia de Softwares para mejorar la administración documental con integración OCR y machine learning.</p>
-                                          <br/> 
-                                          <div class="col-md-12 col-xs-12 col-sm-12" style="margin-top: 10px;"  id="productos">
-                                                <div class="col-md-6 col-xs-12 col-sm-6">
-                                                      <h1 class="fuentetexto azul" style="font-size: 20px;">ddoc Gestor Documental</h1><br/>
-                                                      Define, almacena y localiza rápidamente entre tus expedientes y documentos electrónicos
-                                                </div>
-                                                <div class="col-md-6 col-xs-12 col-sm-6">
-                                                      <h1 class="fuentetexto azul" style="font-size: 20px;">ddoc lnvoice Control</h1><br/>
-                                                      Controla tus facturas electrónicas nacionales de una manera óptima
-                                                </div>
-                                                <div class="col-md-12 col-xs-12 col-sm-12">
-                                                      <center><h1 class="fuentetexto azul"> ddoc ML</h1></center>
-                                                      Mejora tu control documental por medio de nuestras herramientas reforzadas con machine learning.
-                                                </div>
-                                                <div class="col-md-3 col-xs-12 col-sm-3">
-                                                      <center>
-                                                            <h1 class="fuentetexto azul" style="font-size: 10px;">ddoc
-                                                                  Document <br/>
-                                                                  Recognition.
-                                                            </h1>
-                                                      </center>
-
-                                                </div>
-                                                <div class="col-md-3 col-xs-12 col-sm-3">
-                                                      <center><h1 class="fuentetexto azul" style="font-size: 10px;">ddoc 
-                                                            Text<br/>
-                                                            Recognition
-                                                            </h1></center>
-                                                </div>
-                                                <div class="col-md-3 col-xs-12 col-sm-3">
-                                                      <center><h1 class="fuentetexto azul" style="font-size: 10px;">ddoc 
-                                                            Face <br/>
-                                                            Recognition
-                                                            </h1></center>
-                                                </div>
-                                                <div class="col-md-3 col-xs-12 col-sm-3">
-                                                      <center><h1 class="fuentetexto azul" style="font-size: 10px;">
-                                                            ddoc 
-                                                            Signature<br/>
-                                                            Recognition
-                                                            </h1></center>
-                                                </div>
-                                                <div class="col-md-12 col-xs-12 col-sm-12">
-                                                      <div class="col-md-6 col-xs-12 col-sm-">
-                                                            <h1 class="fuentetexto azul" style="font-size: 20px;">
-                                                                  ddoc Control</h1><br/>
-                                                            Controla tu proceso de digitalización y almacenamiento electrónico.
-
-                                                      </div>
-                                                      <div class="col-md-6 col-xs-12 col-sm-">
-                                                            <h1 class="fuentetexto azul" style="font-size: 20px;">
-                                                                  ddoc Control Room.</h1><br/>
-                                                            Controla tus proyectos documentales de manera centralizada.
-
-                                                      </div>
-                                                </div>
-                                          </div>
-                                    </div>
-                              </div>
-                              <div class="col-md-6 col-xs-12 col-sm-6 esconder" id="servicios">
-                                    <div class="col-md-12 col-xs-12 col-sm-12">
-                                          <center><h1 class="fuentetexto azul">Servicios</h1></center>
-                                          <br/>
-                                          <p style="text-align: justify;">Digital Data cuenta con una gama de servicios para optimizar tu gestión corporativa.</p>
-                                          <br/> 
-                                          <div class="col-md-12 col-xs-12 col-sm-12" style="margin-top: 10px;">
-                                                <div class="row">                                              
-                                                      <div class="col-md-6 col-xs-12 col-sm-12">
-                                                            <h1 class="fuentetexto azul" style="font-size: 20px;"> Digitalización y captura de datos</h1><br/>
-                                                            ¡Convertimos de manera óptima tu documentación física en digital!
-                                                      </div>
-                                                      <div class="col-md-6 col-xs-12 col-sm-6">
-                                                            <h1 class="fuentetexto azul" style="font-size: 20px;"> Ciencias de datos</h1><br/>
-                                                            Controla tu proceso documental con nuestras herramientas complementadas con Machine Learning.
-                                                      </div>
-                                                </div>
-                                                <div class="row" style="margin-top: 30px;"> 
-                                                      <div class="col-md-6 col-xs-12 col-sm-6">
-                                                            <h1 class="fuentetexto azul" style="font-size: 20px;"> Venta y renta de Scanners</h1><br/>
-                                                            Somos distribuidores de marcas reconocidas internacionalmente.
-                                                            <br/>
-                                                            <br/>
-                                                            <b>¡Conoce nuestro catálogo!</b>
-                                                      </div>
-                                                      <div class="col-md-6 col-xs-12 col-sm-6">
-                                                            <h1 class="fuentetexto azul" style="font-size: 20px;"> Centro documentales móviles.</h1>
-                                                            Contamos con centros digitales móviles capacitados con tecnología de punta.
-                                                      </div>
-                                                </div>
-                                          </div>
-                                    </div>
-                              </div>
-                        </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xs-12 col-sm-6 esconder" id="servicios">
+            <div class="col-md-12 col-xs-12 col-sm-12">
+              <center><h1 class="fuentetexto azul">Servicios</h1></center>
+              <br/>
+              <p style="text-align: justify;">Digital Data cuenta con una gama de servicios para optimizar tu gestión corporativa.</p>
+              <br/>
+              <div class="col-md-12 col-xs-12 col-sm-12" style="margin-top: 10px;">
+                <div class="row">
+                  <div class="col-md-6 col-xs-12 col-sm-12">
+                    <h1 class="fuentetexto azul" style="font-size: 20px;"> Digitalización y captura de datos</h1><br/>
+                    ¡Convertimos de manera óptima tu documentación física en digital!
                   </div>
-            </section>
-            <script>
-                  function myFunction() {
-                        var x = document.getElementById("myTopnav");
-                        var y=document.getElementById("slider-wrapper");
-                        if (x.className === "topnav") {
-                              x.className += " responsive";
-                              y.style+="´padding-top:0px;";
-                        } else {
-                              x.className = "topnav";
-                              y.style+="´padding-top:70px;";
-                        }
-                  }
-            </script>
+                  <div class="col-md-6 col-xs-12 col-sm-6">
+                    <h1 class="fuentetexto azul" style="font-size: 20px;"> Ciencias de datos</h1><br/>
+                    Controla tu proceso documental con nuestras herramientas complementadas con Machine Learning.
+                  </div>
+                </div>
+                <div class="row" style="margin-top: 30px;">
+                  <div class="col-md-6 col-xs-12 col-sm-6">
+                    <h1 class="fuentetexto azul" style="font-size: 20px;"> Venta y renta de Scanners</h1><br/>
+                    Somos distribuidores de marcas reconocidas internacionalmente.
+                    <br/>
+                    <br/>
+                    <b>¡Conoce nuestro catálogo!</b>
+                  </div>
+                  <div class="col-md-6 col-xs-12 col-sm-6">
+                    <h1 class="fuentetexto azul" style="font-size: 20px;"> Centro documentales móviles.</h1>
+                    Contamos con centros digitales móviles capacitados con tecnología de punta.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="col-md-12" align="Center" id="seccionsoluciones">
+      <b class="col-md-12 azul" >Diagrama soluciones pendiente</b>
+      <div class="">
+      </div>
+      <div class="col-md-12">
+        <img src="Imagenes/DIAGRAMA-HOME.png" style="width:800px;height:450px;" align="Center"> <span> <br> <br> <a target="_blank" class="boton_personalizado" href="soluciones.html"> Conoce más</a></span>
+      </div>
+    </section>
+    <section class="col-md-12" id="seccionexitos">
+      <b class="col-md-12 azul" align="Center">Sección exitos</b>
+    </section>
+    <section class="col-md-12" id="seccionbeneficios">
+      <b class="col-md-12 azul" align="Center">Sección beneficios</b>
+      <div id="tablaservicios" class="row col-md-12" style="margin-top: 120px;">
+        <div class="row col-md-12" style="left: 20px;">
+          <div class="col-md-3" style="font-size: 35px; font-weight: 900;">
+            <br>GARANTÍA DE BENEFICIOS
+          </div>
+          <div class="row col-md-9 fuentetexto" style="font-size: 18px;font-weight:100;">
+            <div class="row col-md-12">
+              <div class="col-md-6">
+                <div class="col-md-6">
+                  <img src="Imagenes/Icons/quality%20(1).png" style="width: 80px;height:80px;vertical-align: middle;">
+                </div>
+                <div class="col-md-6" style="margin-top:30px;">
+                  Calidad y servicio.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="col-md-6">
+                  <img src="Imagenes/Icons/shield.png" style="width: 80px;height: 80px; vertical-align: middle;">
+                </div>
+                <div class="col-md-6" style="margin-top:10px;">Sustentabilidad y <br/>protección de datos.
+                </div>
+              </div>
+            </div>
+            <div class="row col-md-12">
+              <div class="col-md-6" style="margin-top:30px;">
+                <div class="col-md-6">
+                  <img src="Imagenes/Icons/customer-service.png" style="width: 80px;height: 80px; vertical-align:middle;">
+                </div>
+                <div class="col-md-6" style="margin-top:0px;">
+                  Atención a usuarios y clientes de manera rápida y oportuna.
+                </div>
+              </div>
+              <div class="col-md-6" style="margin-top:30px;">
+                <div class="col-md-6">
+                  <img src="Imagenes/Icons/gear.png" style="width: 80px;height: 80px;vertical-align: middle;">
+                </div>
+                <div class="col-md-6" style="margin-top:0px;">
+                  Productividad y eficiencia.
+                </div>
+              </div>
+            </div>
+            <div class="row col-md-12">
+              <div class="col-md-6" style="margin-top:30px;">
+                <div class="col-md-6">
+                  <img src="Imagenes/Icons/web-security.png" style="width: 80px;height: 80px;">
+                </div>
+                <div class="col-md-6">
+                  Seguridad y control de la información.
+                </div>
+              </div>
+              <div class="col-md-6"  style="margin-top:30px;">
+                <div class="col-md-6">
+                  <img src="Imagenes/Icons/management.png" style="width: 100px;height: 100px;">
+                </div>
+                <div class="col-md-6">
+                  Reducción de costos
+                </div>
+              </div>
+            </div>
+            <div class="row col-md-12" style="margin-top:30px;">
+              <center>
+                Normatividad y transparencia
+                <img src="Imagenes/Icons/balance-scale.png" style="width: 100px;height: 100px;">
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <br>
+    <br>
+    <br>
+    <br> <br>
+    <h1 class="azul col-md-12" align="Center">Contacto</h1>
+    <br> <br> <br>
+    <br>
+    <section id="seccionContacto" class="form_wrap">
+      <section class="cantact_info">
+        <section class="info_title">
+          <h2>Información<br>de contacto</h2>
+        </section>
+        <section class="info_items">
+          <img src="Imagenes/contacto.png" alt="" width="200px" height="300px">
+          <p><span class="fa fa-envelope-o fa-4x"></span> info@digitaldata.com.mxs</p>
+          &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp    <p><span class="fa fa-phone fa-3x"></span> &nbsp &nbsp (55) 5616-9118</p>
+        </section>
+      </section>
+      <form action="" class="form_contact">
+        <h2>Envia un mensaje</h2>
+        <div class="user_info">
+          <label for="names">Nombres *</label>
+          <input type="text" id="names">
+          <label for="phone">Telefono / Celular</label>
+          <input type="text" id="phone">
+          <label for="email">Correo electronico *</label>
+          <input type="text" id="email">
+          <label for="mensaje">Mensaje *</label>
+          <textarea id="mensaje"></textarea>
+          <input type="button" value="Enviar Mensaje" id="btnSend">
+        </div>
+      </form>
+    </section>
+    <footer class="fuentetexto">
+      <div class="container col-md-12" style="background-color:#0A182C; height: 150px;">
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-3"> <center>
+            <p style="font-size: 12px;color:white;">Visita también bussiness data evolution</p>
+            <a href="http://www.bdatae.com/"><img src="Imagenes/bdata.jpg" style="width: 100px;height: 80px;"></a></center>
+          </div>
+          <div class="col-md-3">
+            <center>
+              <img src="Imagenes/cuentasc2.jpeg" style="width: 140px;"></center>
+          </div>
+          <div class="col-md-3">
+            <h3>Noticia reciente</h3>
+            <h4>
+              <br/>
+              <br/>
+              <span style="color:white;font-size: 10px;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span>
+              <br/>
+              <a href="#" style="font-size: 10px;">Ver más</a>
+            </h4>
+          </div>
+          <div class="col-md-3">
+            <a href="" style="float: right;"><img src="https://img.icons8.com/doodle/48/000000/whatsapp.png" style="height: 50px;width: 50px;"></a>
+            <a href="" style="float: right;"><img src="https://img.icons8.com/plasticine/48/000000/linkedin.png" style="height: 50px;width: 50px;"></a>
+            <a href="" style="float: right;"><img src="https://img.icons8.com/doodle/48/000000/facebook-new.png" style="height: 50px;width: 50px;"></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright text-center" style="background-color: black;color:white;">
+        Copyright &copy; 2019 <span>Digital Data</span>
+      </div>
+    </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
 
-      </body>
+    <!--script hover scanner-->
+    <script>
+      $(".hover").mouseleave(
+        function () {
+          $(this).removeClass("hover");
+        }
+      );
+    </script>
+    <!--Termina script hover scanner-->
+  </body>
 </html>

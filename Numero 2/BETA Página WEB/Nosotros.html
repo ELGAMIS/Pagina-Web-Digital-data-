@@ -33,7 +33,7 @@
             function count(){
                 var counter = { var: 0 };
                 TweenMax.to(counter, 2, {
-                    var: 10, 
+                    var: 10,
                     onUpdate: function () {
                         var number = Math.ceil(counter.var);
                         $('#desarrollos').html(number);
@@ -41,14 +41,14 @@
                     },
                     onComplete: function(){
                         count();
-                    },    
+                    },
                     ease:Circ.easeOut
                 });
             }
             function count2(){
                 var counter={var:0};
                 TweenMax.to(counter, 2, {
-                    var: 345, 
+                    var: 345,
                     onUpdate: function () {
                         var number = Math.ceil(counter.var);
                         $('#clientes').html(number);
@@ -56,14 +56,14 @@
                     },
                     onComplete: function(){
                         count2();
-                    },    
+                    },
                     ease:Circ.easeOut
                 });
             }
             function count3(){
                 var counter={var:0};
                 TweenMax.to(counter, 2, {
-                    var: 5000000, 
+                    var: 5000000,
                     onUpdate: function () {
                         var number = Math.ceil(counter.var);
                         var valor=new Intl.NumberFormat().format(number);
@@ -72,14 +72,14 @@
                     },
                     onComplete: function(){
                         count3();
-                    },    
+                    },
                     ease:Circ.easeOut
                 });
             }
             function count4(){
                 var counter={var:0};
                 TweenMax.to(counter, 1, {
-                    var: 23, 
+                    var: 23,
                     onUpdate: function () {
                         var number = Math.ceil(counter.var);
                         $('#aliados').html(number);
@@ -87,14 +87,14 @@
                     },
                     onComplete: function(){
                         count4();
-                    },    
+                    },
                     ease:Circ.easeOut
                 });
             }
             function count5(){
                 var counter={var:0};
                 TweenMax.to(counter, 2, {
-                    var: 400, 
+                    var: 400,
                     onUpdate: function () {
                         var number = Math.ceil(counter.var);
                         $('#colabs').html(number);
@@ -102,14 +102,14 @@
                     },
                     onComplete: function(){
                         count5();
-                    },    
+                    },
                     ease:Circ.easeOut
                 });
             }
             function count6(){
                 var counter={var:0};
                 TweenMax.to(counter, 2, {
-                    var: 100, 
+                    var: 100,
                     onUpdate: function () {
                         var number = Math.ceil(counter.var);
                         $('#centros').html(number);
@@ -117,11 +117,11 @@
                     },
                     onComplete: function(){
                         count6();
-                    },    
+                    },
                     ease:Circ.easeOut
                 });
             }
-            jQuery(function($) { 
+            jQuery(function($) {
                 $('#sec2-1').waypoint(function() {
                     count();
                     count2();
@@ -131,44 +131,44 @@
                                       {
                     offset: '70%',
                     triggerOnce: true
-                });  
+                });
                 $('#sec3-1').waypoint(function() {
                     $(this).toggleClass('fadeIn animated' );
                 },
                                       {
                     offset: '70%',
                     triggerOnce: true
-                });  
+                });
                 $('#seccion3-2').waypoint(function() {
                     $(this).toggleClass('fadeIn animated' );
                 },
                                           {
                     offset: '70%',
                     triggerOnce: true
-                });  
+                });
                 $('#sec-3').waypoint(function() {
                     $(this).toggleClass('fadeIn animated' );
                 },
                                      {
                     offset: '70%',
                     triggerOnce: true
-                });  
+                });
                 $('#seccion3-3').waypoint(function() {
                     $(this).toggleClass('fadeIn animated' );
                 },
                                           {
                     offset: '70%',
                     triggerOnce: true
-                });  
+                });
                 $('#seccion5').waypoint(function() {
-                    $(this).toggleClass('rubberBand animated' );
+                    $(this).toggleClass('fadeIn animated' );
                 },
                                         {
                     offset: '70%',
                     triggerOnce: true
-                });  
+                });
                 $('#seccion6').waypoint(function() {
-                    $(this).toggleClass('rubberBand animated' );
+                    $(this).toggleClass('fadeIn animated' );
                 },
                                         {
                     offset: '70%',
@@ -180,12 +180,11 @@
                                       {
                     offset: '70%',
                     triggerOnce: true
-                }); 
+                });
             });
             count3();
             count5();
         </script>
-
     </head>
     <body>
         <section class="topnav" id="myTopnav">
@@ -204,7 +203,7 @@
             <section class="col-md-12 col-xs-12 col-sm-12 fuentetexto" style="margin-top: 70px;margin-bottom: 50px;">
                 <div  id="sec2-1" class="col-md-6 col-xs-12 col-sm-6" style="margin-top: 40px;">
                     <h1 class="azul" style="font-weight: 900;font-size: 30px;">Innovamos procesos y creamos soluciones.</h1>
-                    <p style="font-size: 17px;">
+                    <p style="font-size: 17px;text-align: justify;">
                         Digital data es la empresa de control documental, especializada en proveer servicios de digitalización, procesos de documentación y manejo de información.<br/><br/>
                         Hemos implementado nuestros servicios en múltiples proyectos para instituciones gubernamentales y privadas, logrando obtener grandes casos de éxito, digitalizando y capturando más de 500 millones de documentos. <br/><br/>
                         Nuestros centros de digitalización están equipados con scanners de última tecnología integrados en soluciones orientadas a la automatización de procesos y aprovechamiento de la información.<br/><br/>
@@ -215,10 +214,10 @@
                     </p>
                 </div>
                 <div class="col-md-6 col-xs-12 col-sm-6"  style="margin-top: 40px;">
-                    <center>                    
+                    <center>
                         <img src="Imagenes/Nosotros1.png" style="width:300px;height:300px;">
                     </center>
-                    <div class="col-md-12 col-xs-12 col-sm-12" style="background-image: linear-gradient( 135deg, #5374a9 10%, #ddd 100%);color:white;">                   
+                    <div class="col-md-12 col-xs-12 col-sm-12" style="background-image: linear-gradient( 135deg, #5374a9 10%, #ddd 100%);color:white;">
                         <div class="row col-md-12 col-xs-12 col-sm-12">
                             <div class="col-md-6 col-xs-12 col-sm-6">
                                 <h1 id="desarrollos" class="tablanumero"></h1>
@@ -258,18 +257,18 @@
                         <img src="Imagenes/fondosintegrales.jpg" style="width: 100%;height: 100%;">
                     </div>
                     <div class="col-md-6 col-xs-12 col-sm-6">
-                        <h1 class="azul" style="font-size: 50px;margin-top: 40px;">Misión</h1>
+                        <h1 class="azul" style="font-size: 50px;margin-top: 40px;font-weight: 900;">Misión</h1>
                         <br/>
                         <br/>
-                        <p style="font-size: 25px;">Ser una empresa de excelencia en ofrecer servicios
+                        <p style="font-size: 25px;text-align: justify;">Ser una empresa de excelencia en ofrecer servicios
                             de digitalización y captura, que permitan a nuestros clientes administrar, buscar, salvaguardar y procesar información para agilizar sus procesos de manera confiable
                         </p>
                     </div>
                 </div>
                 <div id="seccion3-2" class="row col-md-12 col-xs-12 col-sm-12" style="margin-top: 10px;">
                     <div class="col-md-6 col-xs-12 col-sm-6">
-                        <h1 class="azul" style="font-size: 50px;margin-top: 40px;">Visión</h1>
-                        <p style="font-size: 25px;"><br/>
+                        <h1 class="azul" style="font-size: 50px;margin-top: 40px;font-weight: 900;">Visión</h1>
+                        <p style="font-size: 25px;text-align: justify;"><br/>
                             <br/>
                             Ser la empresa de procesamiento de información más confiable en el mercado. Reconocidos por brindar un servicio oportuno, de excelencia y
                             adaptado a tus necesidades.
@@ -284,10 +283,9 @@
                         <img src="Imagenes/CienciaD.jpg" style="width: 100%;height: 100%px;">
                     </div>
                     <div id="sec-3" class="col-md-6 col-xs-12 col-sm-6">
-
-                        <h1 class="azul" style="font-size: 50px;margin-top: 40px;">Objetivos de Calidad</h1>
+                        <h1 class="azul" style="font-size: 50px;margin-top: 40px;font-weight: 900;">Objetivos de Calidad</h1>
                         <br/>
-                        <ul style="font-size:20px;margin-left: 40px;">                            
+                        <ul style="font-size:20px;margin-left: 40px;">
                             <li>Controlar y administrar cada aspecto del proceso de digitalización mediante el uso de nuestro producto ddoc Control.</li>
                             <li>Implementar procesos óptimos para otorgar productos que eviten cualquier rechazo de nuestros cliente.</li>
                             <li>Garantizar la calidad de nuestros servicios en cada proceso documental en el que  estemos involucrados.</li>
@@ -295,19 +293,19 @@
                         </ul>
                     </div>
                 </div>
-            </section> 
+            </section>
             <section id="seccion4" class="col-md-12 col-xs-12 col-sm-12 fuentetexto" style="margin-bottom: 10px;">
                 <div id="sec4-1" class="col-md-6 col-xs-12 col-sm-6">
-                    <h1 class="azul" style="font-size:40px;margin-top: 10px;">Política de calidad.</h1>
+                    <h1 class="azul" style="font-size:40px;margin-top: 10px;font-weight: 900;">Política de calidad.</h1>
                     <br/>
-                    <p style="font-size: 15px;">
+                    <p style="font-size: 15px;text-align: justify;">
                         Digital Data es una empresa comprometida en brindar servicios y soluciones en digitalización y captura de datos.
                         <br/>
                         Basamos nuestra Política de gestión de calidad en los siguientes principios:
                         <br/>
-                        <b/>                    
+                        <b/>
                     </p>
-                    <ul style="margin-left: 40px;margin-right: 30px; text-align: justify;">                      
+                    <ul style="margin-left: 40px;margin-right: 30px; text-align: justify;">
                         <li>Proporcionar los medios y recursos necesarios, estructurando un sistema organizacional que garantice el óptimo funcionamiento de nuestros productos y servicios.</li>
                         <li>Asegurar y comprobar que se determinen y cumplan los requisitos de nuestros clientes, con el propósito de aumentar su satisfacción y fidelidad.</li>
                         <li>Transmitir la sensibilización, concienciación y formación de nuestros empleados sobre los requisitos de calidad y seguridad informática.</li>
@@ -319,9 +317,9 @@
                 <div class="col-md-6 col-xs-12 col-sm-6">
                     <img src="Imagenes/fondosintegrales.jpg" style="width: 100%;height: 100%;">
                 </div>
-            </section> 
+            </section>
             <section id="seccion5" class="col-md-12 col-xs-12 col-sm-12 fuentetexto">
-                <center><h1 style="font-size: 60px;" class="azul">VALORES</h1></center> 
+                <center><h1 style="font-size: 60px;font-weight: 900;" class="azul">VALORES</h1></center>
                 <div class="row col-md-12 col-xs-12 col-sm-12 valoresgg" style="margin-top: 30px;">
                     <div class="col-md-2 col-xs-12 col-sm-3">
                         <center>
@@ -358,25 +356,25 @@
                             <h1> esto es una prueba</h1>
                         </center>
                     </div>
-                </div> 
+                </div>
             </section>
             <section id="seccion6" class="col-md-12 col-xs-12 col-sm-12 fuentetexto">
                 <center>
-                    <h1 style="font-size: 60px;" class="azul">ALIANZAS ESTRATÉGICAS</h1>
+                    <h1 style="font-size: 60px;font-weight: 900;" class="azul">ALIANZAS ESTRATÉGICAS</h1>
                     <p style="font-size: 20px;text-align: justify;">En Digital Data no solo utilizamos tecnología de las marcas más reconocidas en el mercado de digitalización y captura de datos, sino que somos distribuidores de las mismas, al igual de software de tecnología de punta.
                         Por lo que si estas interesado en la compra de productos haz clic y ¡Conócelos!
-                    </p></center> 
+                    </p></center>
                 <div class="row col-md-12 col-xs-12 col-sm-12" style="margin-top: 40px;">
                     <div class="col-md-4 col-xs-12 col-sm-4">
-                        <img src="Imagenes/imagenrellenoejemplo.png" style="width:100%; height:100%;" onclick="alertDGC('KOFAX.(software)<br/><br/>En varios de nuestros casos de éxito, nos hemos apoyado del software KOFAX, reconocido a nivel mundial en <b>digitalización de documentos y captura de datos</b>, creando sistemas integrales para el procesamiento de información.<br/>Además, hemos logrado integrar nuestros productos <b>ddoc ML</b> a cualquier flujo de trabajo que utilicen las herramientas de KOFAX');">
+                        <img src="Imagenes/logosa/kofax.png" style="width:100%; height:100%;" onclick="alertDGC('KOFAX.(software)<br/><br/>En varios de nuestros casos de éxito, nos hemos apoyado del software KOFAX, reconocido a nivel mundial en <b>digitalización de documentos y captura de datos</b>, creando sistemas integrales para el procesamiento de información.<br/>Además, hemos logrado integrar nuestros productos <b>ddoc ML</b> a cualquier flujo de trabajo que utilicen las herramientas de KOFAX');">
                     </div>
                     <div class="col-md-4 col-xs-12 col-sm-4">
-                        <img src="Imagenes/imagenrellenoejemplo.png" style="width:100%; height:100%;"   onclick="alertDGC('Kodak (escáner)<br/>Con soluciones de <b>Kodak Infuse</b> hemos logrado asociar procesos documentales automatizados y manuales directamente a botones personalizados en el scanner. <br/>Integrando nuestra gama de productos <b>ddoc ML</b> a la solución Infuse, detonamos procesos de negocio totalmente automatizados directamente desde el botón del scanner.');">
+                        <img src="Imagenes/logosa/kodak.png" style="width:100%; height:100%;"   onclick="alertDGC('Kodak (escáner)<br/>Con soluciones de <b>Kodak Infuse</b> hemos logrado asociar procesos documentales automatizados y manuales directamente a botones personalizados en el scanner. <br/>Integrando nuestra gama de productos <b>ddoc ML</b> a la solución Infuse, detonamos procesos de negocio totalmente automatizados directamente desde el botón del scanner.');">
                     </div>
                     <div class="col-md-4 col-xs-12 col-sm-4">
-                        <img src="Imagenes/imagenrellenoejemplo.png" style="width:100%; height:100%;"  onconclick="alertDGC('OPEX (escáner)<br/>En nuestras soluciones integrales utilizamos scanners OPEX de alimentación mixta, que abaten los costos gracias a su patentado sistema que permite digitalizar los documentos desde el folder, separándolos automáticamente en multi-bandeja de salida. <br/>Esto combinado con nuestro producto <b>ddoc Control</b>, es una de las mejores soluciones para realizar digitalizaciones masivas.');">
+                        <img src="Imagenes/logosa/opex.png" style="width:100%; height:100%;"  onconclick="alertDGC('OPEX (escáner)<br/>En nuestras soluciones integrales utilizamos scanners OPEX de alimentación mixta, que abaten los costos gracias a su patentado sistema que permite digitalizar los documentos desde el folder, separándolos automáticamente en multi-bandeja de salida. <br/>Esto combinado con nuestro producto <b>ddoc Control</b>, es una de las mejores soluciones para realizar digitalizaciones masivas.');">
                     </div>
-                </div> 
+                </div>
                 <div class="row col-md-12 col-xs-12 col-sm-12" style="margin-top: 10px;">
                     <div class="col-md-4 col-xs-12 col-sm-4">
                         <img src="Imagenes/imagenrellenoejemplo.png" style="width:100%; height:100%;"  onclick="alertDGC('Microsoft Azure(infraestructura)<br/><br/>Nuestros productos son perfectamente compatibles con la infraestructura <b>Azure</b>.<br/>Podemos ofrecerte nuestros productos y <b>soluciones integrales</b> como un servicio en esta fabulosa nube para que te olvides de costos de administración, seguridad y gestión de infraestructura.');">
@@ -387,7 +385,7 @@
                     <div class="col-md-4 col-xs-12 col-sm-4">
                         <img src="Imagenes/imagenrellenoejemplo.png" style="width:100%; height:100%;"  onclick="alertDGC('Microfocus (software)<br/><br/>Integramos soluciones de <b>Microfocus IDOL</b>, líder mundial en sistemas de indexación y clasificación automática de información, con capacidad de búsquedas conceptuales en sistemas de gestión documental externos o en <b>ddoc Gestor Documental</b>.');">
                     </div>
-                </div> 
+                </div>
                 <div class="row col-md-12 col-xs-12 col-sm-12" style="margin-top: 10px;">
                     <div class="col-md-4 col-xs-12 col-sm-4">
                         <img src="Imagenes/imagenrellenoejemplo.png" style="width:100%; height:100%;"  onclick="alertDGC('DT Search (software)<br/><br/>Utilizamos herramientas <b>DT Search</b> especializadas en recuperación de texto y recuperación de documentos: <b>“The Smart Choice for Text Retrieval® since 1991”</b>');">
@@ -398,8 +396,38 @@
                     <div class="col-md-4 col-xs-12 col-sm-4">
                         <img src="Imagenes/imagenrellenoejemplo.png" style="width:100%; height:100%;"  onclick="alertDGC('Fujitsu, Avision, Canon, Panasonic, Image Access (escáner)<br/>Contamos con <b>scanners</b> de las marcas líderes en el mercado, integrando a nuestras soluciones y servicios cada una de ellas, si te interesa saber más da clic (Re direccionamos al catálogo de venta y renta de scanners)');">
                     </div>
-                </div> 
+                </div>
             </section>
+        </section>
+        <section id="seccion7" class="col-md-12 col-xs-12 col-sm-12 fuentetexto">
+            <div class="col-md-12" style="background-color:#0A182C;">
+                <div class="row" style="padding-top:40px;">
+                    <div class="col-md-3"> <center>
+                        <p style="font-size: 12px;color:white;">Visita también bussiness data evolution</p>
+                        <a href="http://www.bdatae.com/"><img src="Imagenes/bdata.jpg" style="width: 100px;height: 80px;"></a></center>
+                    </div>
+                    <div class="col-md-3">
+                        <center>
+                            <img src="Imagenes/cuentasc2.jpeg" style="width: 140px;"></center>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Noticia reciente</h3>
+                        <h4>
+                            <span style="color:white;font-size: 10px;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span>
+                            <br/>
+                            <a href="#" style="font-size: 10px;">Ver más</a>
+                        </h4>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="" style="float: right;"><img src="https://img.icons8.com/doodle/48/000000/whatsapp.png" style="height: 50px;width: 50px;"></a>
+                        <a href="" style="float: right;"><img src="https://img.icons8.com/plasticine/48/000000/linkedin.png" style="height: 50px;width: 50px;"></a>
+                        <a href="" style="float: right;"><img src="https://img.icons8.com/doodle/48/000000/facebook-new.png" style="height: 50px;width: 50px;"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center" style="background-color: black;color:white;">
+                Copyright &copy; 2019 <span>Digital Data</span>
+            </div>
         </section>
         <script>
             function myFunction() {
