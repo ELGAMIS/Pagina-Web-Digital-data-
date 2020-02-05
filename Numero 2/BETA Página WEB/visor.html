@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="iNTRA OFFICE" />
+    <meta http-equiv="content-type" content="text/html"/>
+    <title>Digital Data</title>
+
+    <!--Bootstrap-->
+
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.4.1/css/bootstrap-theme.css"/>
+
+    <!--Personal Style-->
+    <link href="CSS/visor.css" type="text/css" rel="stylesheet"/>
+
+    <!--Fuente-->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet"/>
+
+    <!--Animate.css-->
+    <link href="animate.css" rel="stylesheet" type="text/css"/>
+
+    <!--Javascript&JQuery-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="waypoints.min.js"></script>
+    <script type="text/javascript">
+      jQuery(function($) {
+        $('#tseccion1').waypoint(function() {
+          $(this).toggleClass( 'bounceIn animated' );
+        },
+                                 {
+          offset: '70%',
+          triggerOnce: true
+        });
+        $('#sloganseccion3').waypoint(function() {
+          $(this).toggleClass( 'bounceInLeft animated' );
+        },
+                                      {
+          offset: '70%',
+          triggerOnce: true
+        });
+        $('#productos').waypoint(function() {
+          $(this).toggleClass( 'bounceInLeft animated' );
+        },
+                                 {
+          offset: '70%',
+          triggerOnce: true
+        });
+        $('#servicios').waypoint(function() {
+          $(this).toggleClass( 'bounceInRight animated' );
+        },
+                                 {
+          offset: '70%',
+          triggerOnce: true
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <section class="topnav" id="myTopnav">
+      <section class="navsec">
+        <a href="#"><center><img class="iconomenu" src="https://img.icons8.com/small/20/000000/home.png"><br/>Inicio</center></a>
+        <a href="#"><center><img class="iconomenu" src="https://img.icons8.com/dotty/20/000000/link-company-parent.png"><br/>Nosotros</center></a>
+        <a href="#"><center><img class="iconomenu" src="https://img.icons8.com/wired/20/000000/idea-sharing.png"><br/>Soluciones integrales</center></a>
+        <a href="#"><center><img class="iconomenu" src="https://img.icons8.com/wired/20/000000/meeting.png"><br/>Clientes</center></a>
+        <a href="#"><center><img class="iconomenu" src="https://img.icons8.com/ios/20/000000/search-contacts.png"><br/>Contacto</center></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </section>
+    </section>
+    <section id="section1" class="col-md-12 col-xs-12 col-sm-12" style="padding-bottom: 70px;">
+      <div class="col-md-12 col-xs-12 col-sm-12 fuentetexto" style="margin-top:80px;">
+        <div class="col-md-12 col-xs-12 col-sm-12"> <h1 style="font-size:40px;font-weight:600;" class="azul">Visor Documental</h1>
+          <b style="font-size:20px;">!Visualiza y domina tu información!</b><br/>
+          <p style="font-size:22px;text-align:justify;">
+            Podrás visualizar tus documentos, por medio de funcionalidades <b>básicas de navegación y manipulación</b>.<br/>
+            Dependiendo de los permisos asignados a cada usuario se podrán realizar las funciones permitidas a los
+            documentos como:</p>
+        </div>
+        <div class="row col-md-12 col-xs-12 col-sm-12" style="margin-top: 30px;">
+          <div class="col-md-2 col-xs-0 col-sm-3"></div>
+          <div class="col-md-8 col-xs-12 col-sm-6">
+            <div class="col-md-3 col-xs-12 col-sm-3">
+              <img src="assets/016-envelope.png" style="width:160px;height:150px;">
+              <h3>Impresión de documentos</h3>
+            </div>
+            <div class="col-md-3 col-xs-12 col-sm-3">
+              <img src="assets/004-backup.png" style="width:160px;height:150px;">
+              <h3>Descarga de Documentos</h3>
+            </div>
+            <div class="col-md-3 col-xs-12 col-sm-3">
+              <img src="assets/002-attachment.png" style="width:160px;height:150px;">
+              <h4  style="font-size: 22px;text-align: center;">Integración a correo electrónico</h4>
+            </div>
+            <div class="col-md-3 col-xs-12 col-sm-3">
+              <img src="assets/001-agreement.png" style="width:160px;height:150px;">
+              <h3>Aceptación de documentos</h3>
+            </div>
+          </div>
+          <div class="col-md-2 col-xs-0 col-sm-3"></div>
+        </div>
+        <div class="row col-md-12 col-xs-12 col-sm-12" style="margin-top: 30px;">
+          <div class="col-md-3 col-xs-0 col-sm-3"></div>
+          <div class="col-md-6 col-xs-12 col-sm-6">
+            <div class="col-md-4 col-xs-12 col-sm-3">
+              <img src="assets/011-copy.png" style="width:160px;height:150px;">
+              <h4  style="font-size: 22px;text-align: left;">Hipervínculos en documentos</h4>
+            </div>
+            <div class="col-md-4 col-xs-12 col-sm-3">
+              <img src="assets/026-folder.png" style="width:160px;height:150px;">
+              <h3>Marcas de agua</h3>
+            </div>
+            <div class="col-md-4 col-xs-12 col-sm-3">
+              <img src="assets/024-pen.png" style="width:160px;height:150px;">
+              <h4  style="font-size: 22px;text-align: center;">
+                Firmas Digitales</h4>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-0 col-sm-3"></div>
+        </div>
+      </div>
+    </section>
+    <section id="section2" class="col-md-12 col-xs-12 col-sm-12">
+      <p style="font-size:24px;text-align:center;">
+        El sistema permite cargar documentos en formatos:<b>PDF,XML(Facturas SAT),TIFF,JPEG,JPG,PNG,BMP.</b><br/>
+        Puedes <b>habilitar funciones específicas</b> en base a la medida de tu negocio.
+      </p>
+      <div class="row col-md-12 col-xs-12 col-sm-12 fuentetexto">
+        <div class="col-md-6 cl-xs-12 col-sm-6" style="text-align:center;"> 
+
+          <h1 style="font-size:24px;width: 550px;font-weight:600;" class="azul">Administración de permisos y privilegios
+          </h1></br>
+        <b style="font-size:20px;">!Organiza y controla tu staff documental!</b><br/>
+        <p style="font-size:24px;width: 550px;text-align:justify center;">
+          Puedes realizar búsquedas sobre cualquier
+          identificador:metadatos ó campos definidos,
+          asociados a tus documentos.
+        </p></div>
+      <div class="col-md-6 cl-xs-12 col-sm-6" style="text-align:center;">
+        <h1 style="font-size:24px;width: 550px;font-weight:600;" class="azul">Importación masiva documental
+        </h1><br/>
+        <b style="font-size:20px;">!Aprovecha tu digitalización histórica!</b><br/>
+        <p style="font-size:22px;width: 550px;text-align:center;">
+          El sistema te permite definir los accesos y funciones que 
+          puedes realizar con tus documentos para cada usuario,por
+          parte del administrador.</p></div>
+      </div>
+    <div class="row col-md-12 col-xs-12 col-sm-12 fuentetexto" style="margin-top:30px;">
+      <h1 style="font-size:24px;font-weight:600;text-align: center;" class="azul">Seguridad documental
+      </h1>
+      <center>
+        <br/>
+        <b style="font-size:20px;">!Garantiza la confidencialidad, integridad y disponibilidad
+          de tus documentos!</b><br/>
+        <p style="font-size:20px;text-align:center;width: 65%;">
+          Cada documento será consultado solamente por los usuarios
+          que cuenten con el acceso correspondiente.
+        </p>
+        <br/>
+        <p style="font-size:20px;text-align:justify center;width: 100%;">
+          Contamos con pruebas de vulnerabilidad de hackeo ético, realizadas por <b>Acunetix
+          líderes en seguridad de aplicaciones web automatizadas.</b>
+        </p>
+      </center>
+    </div>
+    </section>
+  <footer class="fuentetexto">
+    <div class="col-md-12" style="background-color:#0A182C;">
+      <div class="row" style="padding-top:40px;">
+        <div class="col-md-3"> <center>
+          <p style="font-size: 12px;color:white;">Visita también bussiness data evolution</p>
+          <a href="http://www.bdatae.com/"><img src="Imagenes/bdata.jpg" style="width: 100px;height: 80px;"></a></center>
+        </div>
+        <div class="col-md-3">
+          <center>
+            <img src="Imagenes/cuentasc2.jpeg" style="width: 140px;"></center>
+        </div>
+        <div class="col-md-3">
+          <h3>Noticia reciente</h3>
+          <h4>
+            <span style="color:white;font-size: 10px;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span>
+            <br/>
+            <a href="#" style="font-size: 10px;">Ver más</a>
+          </h4>
+        </div>
+        <div class="col-md-3">
+          <a href="" style="float: right;"><img src="https://img.icons8.com/doodle/48/000000/whatsapp.png" style="height: 50px;width: 50px;"></a>
+          <a href="" style="float: right;"><img src="https://img.icons8.com/plasticine/48/000000/linkedin.png" style="height: 50px;width: 50px;"></a>
+          <a href="" style="float: right;"><img src="https://img.icons8.com/doodle/48/000000/facebook-new.png" style="height: 50px;width: 50px;"></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright text-center" style="background-color: black;color:white;">
+      Copyright &copy; 2019 <span>Digital Data</span>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+  </body>
+</html>
