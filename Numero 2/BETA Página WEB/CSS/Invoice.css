@@ -93,12 +93,10 @@
     overflow:hidden;
 }
 #section1{
-    background-image: url(../assets/DIAGRAMA_DDOC.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-size: 90% 100%;
-    min-height: 700px;
+    min-height: 300px;
 }
 #section2{
     background-color: #FCFCFC;
