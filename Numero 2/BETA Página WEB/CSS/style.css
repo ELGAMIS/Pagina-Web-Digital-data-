@@ -55,7 +55,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height:700px;
+    min-height:500px;
 }
 #seccioncompania{
     background-color: #fff;
@@ -1016,7 +1016,7 @@ a.menos {
     min-height:600px;
 }
 #seccionexitos{
-    background-color: FCFCFC;
+    background-color: #FCFCFC;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -1024,7 +1024,7 @@ a.menos {
     min-height:700px;
 }
 #seccionbeneficios{
-    background-color: FCFCFC;
+    background-color: #FCFCFC;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -1032,7 +1032,7 @@ a.menos {
     min-height:700px;
 }
 #seccionClientes{
-    background-color: FCFCFC;
+    background-color: #FCFCFC;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
