@@ -170,6 +170,16 @@
     background-size: cover;
     min-height: 700px;
 }
+#seccion7{
+    /*  background-color: #FCFCFC; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    min-height: 200px;
+}
 
 .esconder{
     opacity: 0;
